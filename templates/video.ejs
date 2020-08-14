@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+  <html>
+    <head>
+      <meta charset="utf-8" />
+      <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no"/>
+      <link rel="icon" href="./favicon.ico" type="image/x-icon">       
+      <title><%= title %></title>
+      <style>
+        ul, ol {
+          list-style: none;
+        }
+        * {
+          margin: 0;
+          text-align: center;
+        }
+      </style>
+    </head>
+    <body>
+      <% if (isShow) {%>
+        <h1 style="margin-top: 40px"><%= title %></h1>
+      <% }%>
+      <ul>
+        <% video_list.forEach(function(item, index){ %>
+          <li>
+            <video style="width: 300px;margin-top: 20px;position: absolute; left: 50%;margin-left: -150px;" controls src="./video?id=<%= item.id %>"></video>
+          </li>
+        <% }); %>
+      </ul>
+    </body>
+  </html>

@@ -1,0 +1,17 @@
+Module {
+  id: '.',
+  path: '/Users/higo/works/higo/jarvis-service',
+  exports: {},
+  parent: null,
+  filename: '/Users/higo/works/higo/jarvis-service/test.js',
+  loaded: false,
+  children: [],
+  paths: [
+    '/Users/higo/works/higo/jarvis-service/node_modules',
+    '/Users/higo/works/higo/node_modules',
+    '/Users/higo/works/node_modules',
+    '/Users/higo/node_modules',
+    '/Users/node_modules',
+    '/node_modules'
+  ]
+}

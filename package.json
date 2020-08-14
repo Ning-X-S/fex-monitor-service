@@ -1,0 +1,47 @@
+{
+  "name": "jarvis-service",
+  "version": "1.0.0",
+  "description": "jarvis-service",
+  "main": "./app/server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "NODE_ENV=dev nodemon ./app/server.js",
+    "prod": "NODE_ENV=prod node ./app/server.js",
+    "schedule": "/bin/bash ./app/schedule/start.sh"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@git.lehe.com:fex/jarvis-service.git"
+  },
+  "keywords": [
+    "jarvis-service"
+  ],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "babel-eslint": "^10.1.0",
+    "dayjs": "^1.8.29",
+    "eslint": "^7.3.1",
+    "eslint-config-standard": "^14.1.1",
+    "eslint-plugin-import": "^2.21.2",
+    "eslint-plugin-node": "^11.1.0",
+    "eslint-plugin-promise": "^4.2.1",
+    "eslint-plugin-standard": "^4.0.1",
+    "nodemon": "^2.0.4"
+  },
+  "dependencies": {
+    "@elastic/elasticsearch": "^7.8.0",
+    "axios": "^0.19.2",
+    "ejs": "^3.1.3",
+    "ioredis": "^4.17.3",
+    "koa": "^2.13.0",
+    "koa-body": "^4.2.0",
+    "koa-router": "^9.0.1",
+    "koa-static": "^5.0.0",
+    "mysql2": "^2.1.0",
+    "node-logger": "git+ssh://git@git.lehe.com:npm/node-logger.git#v1.0.5",
+    "sequelize": "^5.21.13",
+    "source-map": "^0.7.3",
+    "xprofiler": "^1.2.3"
+  }
+}
